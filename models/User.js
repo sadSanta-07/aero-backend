@@ -6,6 +6,7 @@ const userSchema = new mongoose.Schema({
     email: { type: String, unique: true },
     avatar: String,
     googleId: String,
+    password: String, // for email/password auth
 
     profileCompleted: { type: Boolean, default: false },
     age: Number,
